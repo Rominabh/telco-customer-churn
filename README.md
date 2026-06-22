@@ -195,11 +195,3 @@ Negative coefficients (reduce churn risk):
 4. **Address early-stage churn** — nearly half of customers in their first year (47.44%) churn. An onboarding program or first-year loyalty offer could help retain this high-risk group.
 
 ---
-
-## How to Run
-
-1. Clone this repository
-2. Open `notebooks/telco_churn_analysis.ipynb` in Google Colab
-3. Upload `data/telco_churn.csv` when prompted
-4. Run all cells in order
-5. Open `dashboard/telco_churn_dashboard.pbix` in Power BI Desktop
