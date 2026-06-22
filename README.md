@@ -51,13 +51,25 @@ telco-customer-churn/
 │   ├── model_predictions.csv
 │   ├── kpi_summary.csv
 │   ├── confusion_matrix.png
-│   └── feature_importance.png
+│   ├── feature_importance.png
+│   ├── dashboard_page1.png
+│   └── dashboard_page2.png
 │
 ├── dashboard/
 │   └── telco_churn_dashboard.pbix       # Power BI dashboard
 │
 └── README.md
 ```
+
+---
+
+## Dashboard
+
+### Page 1 — Churn Overview
+![Churn Overview](https://raw.githubusercontent.com/Rominabh/telco-customer-churn/main/dashboard_page1.png)
+
+### Page 2 — Model Insights
+![Model Insights](https://raw.githubusercontent.com/Rominabh/telco-customer-churn/main/dashboard_page2.png)
 
 ---
 
@@ -68,8 +80,6 @@ The cleaned dataset was loaded into a **SQLite database** and split into three r
 - `customers` — demographic information
 - `services` — subscribed services
 - `billing` — contract, payment, and churn status
-
-This relational structure enabled realistic SQL querying using JOINs across multiple tables.
 
 ### Key SQL Techniques Used
 
@@ -131,8 +141,6 @@ This relational structure enabled realistic SQL querying using JOINs across mult
 | XGBoost | 0.8212 |
 | Random Forest | 0.8207 |
 
-Logistic Regression achieved the best AUC, suggesting the relationships in this dataset are largely linear.
-
 ### Best Model Performance (Logistic Regression)
 
 | Metric | Retained | Churned |
@@ -141,6 +149,12 @@ Logistic Regression achieved the best AUC, suggesting the relationships in this 
 | Recall | 0.91 | 0.52 |
 | F1-score | 0.87 | 0.59 |
 | Accuracy (overall) | | 80% |
+
+### Confusion Matrix
+![Confusion Matrix](https://raw.githubusercontent.com/Rominabh/telco-customer-churn/main/confusion_matrix.png)
+
+### Feature Importance
+![Feature Importance](https://raw.githubusercontent.com/Rominabh/telco-customer-churn/main/feature_importance.png)
 
 ### Top Features Influencing Churn
 
@@ -155,16 +169,6 @@ Negative coefficients (reduce churn risk):
 - `tenure`
 - `InternetService_No`
 - `Contract_Two year`
-
----
-
-## Part 3: Power BI Dashboard
-
-### Page 1 — Churn Overview
-![Churn Overview](outputs/dashboard_page1.png)
-
-### Page 2 — Model Insights
-![Model Insights](outputs/dashboard_page2.png)
 
 ---
 
