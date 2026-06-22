@@ -19,7 +19,6 @@ Customer churn is one of the most critical business problems in subscription-bas
 | Python (Google Colab) | Data cleaning, feature engineering, machine learning |
 | SQLite + pandas | Relational database creation and SQL analysis |
 | Power BI | Interactive dashboard |
-| GitHub | Version control and portfolio |
 
 ---
 
