@@ -2,8 +2,6 @@
 
 **Tools:** Python · SQL (SQLite) · Power BI  
 **Dataset:** IBM Telco Customer Churn · 7,043 customers  
-**GitHub:** [github.com/Rominabh/telco-customer-churn](https://github.com/Rominabh/telco-customer-churn)
-
 ---
 
 ## What is this project about?
