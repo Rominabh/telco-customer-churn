@@ -7,7 +7,7 @@
 
 ## What is this project about?
 
-Every month, telecom companies lose customers who cancel their subscriptions — this is called churn. The goal of this project is to understand *why* customers leave and *who* is most likely to leave next, using a real-world dataset of 7,043 customers.
+Every month, telecom companies lose customers who cancel their subscriptions and this is called churn. The goal of this project is to understand *why* customers leave and *who* is most likely to leave next, using a real-world dataset of 7,043 customers.
 
 The project covers the full data workflow: cleaning the data, exploring it with SQL, identifying high-risk customer groups, calculating business KPIs, building a predictive model, and presenting the results in a Power BI dashboard.
 
