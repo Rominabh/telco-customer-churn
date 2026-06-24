@@ -73,12 +73,3 @@ Built a two-page dashboard: one page for the business overview (KPI cards, churn
 | XGBoost | 0.8212 |
 | Random Forest | 0.8207 |
 
----
-
-## How to run this project
-
-1. Clone this repository
-2. Open `telco_churn_analysis.ipynb` in Google Colab
-3. Upload `telco_churn.csv` when prompted
-4. Run all cells in order
-5. Open `telco_churn_dashboard.pbix` in Power BI Desktop
