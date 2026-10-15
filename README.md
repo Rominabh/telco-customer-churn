@@ -17,7 +17,7 @@ The project covers the full data workflow: cleaning the data, exploring it with 
 
 A few patterns stood out clearly:
 
-- **Contract type matters most.** Customers on month-to-month contracts churn at 42.7%, compared to just 2.8% for two-year contracts.
+- **Contract type and tenure matter most.** Customers on month-to-month contracts churn at 42.7%, compared to just 2.8% for two-year contracts, and the model ranks tenure and contract type as the two strongest factors.
 - **New customers are the most at risk.** Nearly half of customers in their first year (47.4%) end up leaving.
 - **One group stands out as extremely high-risk.** Customers who combine a month-to-month contract, Fiber optic internet, no tech support, and electronic check payment churn at 62.9%, more than double the overall average of 26.5%.
 - **The financial impact is significant.** This translates to $139K in monthly revenue already lost, and another $36K at risk from the 422 high-risk customers still active.
@@ -30,7 +30,7 @@ A few patterns stood out clearly:
 Loaded the raw dataset, fixed a data type issue in the TotalCharges column, and handled 11 missing values caused by customers with zero tenure.
 
 **Step 2: SQL analysis**  
-Loaded the cleaned data into a SQLite database split into three related tables (customers, services, billing). Wrote six queries of increasing complexity to explore churn patterns, including CTEs, window functions, and multi-table joins.
+Loaded the cleaned data into a SQLite database split into three related tables (customers, services, billing). Wrote six queries of increasing complexity to explore churn patterns, including CTEs, a window function (NTILE), and multi-table joins.
 
 **Step 3: Business KPIs**  
 Defined and calculated six KPIs directly from SQL: overall churn rate, high-risk customer count, revenue lost, revenue at risk, and average tenure for churned vs retained customers.
